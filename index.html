@@ -1,38 +1,648 @@
 <!doctype html>
-<html>
-  <head>
-    <title>Imran Khan Shuvo</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">		
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="application-name" content="Social Network User Profile">
+		<meta name="author" content="TheInverse Inc.">
+		<meta name="keywords" content="Social Network,User Profile,HTML5,CSS3,Twitter Bootstrap,jQuery,Javascript">
+		
+		<!-- google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Philosopher:400,700,400italic|Noto+Serif:400,700,400italic|Merriweather:400,700,300' rel='stylesheet' type='text/css'>
+		<!-- fontawesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<!-- Mobile menu -->
+		<link rel="stylesheet" href="css/slicknav.css">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10">
+		<!-- All the styles -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/material.min.css">
+		<link rel="stylesheet" href="css/ripples.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<header class="col-md-12">
+				<div class="site-header">
+					<!-- site logo -->
+					<div class="col-md-12">
+						<div class="col-md-6 site-logo row">
+							<img src="images/brittanto_icon.png" alt="">
+						</div>
+						<!-- Mobile menu -->
+						<div class="col-md-6 mobile-menu">
+							
+						</div><!-- end of mobile menu -->
+					</div> <!-- end of site logo -->
 
-          <div class="row">
-            <div class="col-md-3">
-              <img src="images/japokki_003.png" alt="Shuvo|me">
-            </div>
-          </div>
+					<!-- User introduction -->
+					<div class="col-md-12 row">
+						<div class="col-md-6 col-md-offset-3 user-intro">
+							<h2 class="user-name text-center text-uppercase">joe morgan</h2>
+							<h5 class="user-designation text-capitalize text-center">interior designer</h5>
+							<img src="images/address_icon.png" class="user-address-arrow" alt=""><h4 class="user-address text-center"><em>Melbourne,<span class="text-uppercase">australia</span></em> </h4>
+						</div> 
+					</div><!-- end of User introduction -->
+					
+					<!-- main menu -->
+					<section class="col-md-12 site-menu">
+						<div class="col-md-10 col-md-offset-1 nav">
+							<ul class="main-menu" id="menu">
+								<li class="signle-menu text-uppercase"><a href="">About</a></li>
+								<li class="signle-menu text-uppercase"><a href="">Information</a></li>
+								<li class="signle-menu text-uppercase"><a href="">Photos</a></li>
+								<li class="signle-menu text-uppercase"><a href="">videos</a></li>
+								<li class="signle-menu text-uppercase"><a href="">favourites</a></li>
+								<li class="signle-menu text-uppercase"><a href="">connections</a></li>
+								<li class="signle-menu text-uppercase"><a href="">contacts</a></li>
+							</ul>
+						</div>
+					</section> <!-- end of main menu -->
+				</div>
+				
+			</header>
 
-          <div class="row">
-            <div class="col-md-9">
-              <h1>Everything in the earth seems wonderful !</h1>
-            </div>
-            <div class="col-md-3">
-              <h1>I am lucky to be here!</h1>
-            </div>
-          </div>
+			<!-- User information of about,philosophy -->
+			<section class="col-md-12 user-about">
+				<div class="panel panel-primary col-md-12 custom-panel">
+				    <div class="panel-heading">
+				    	<h3 class="panel-title text-uppercase">about</h3>
+				    </div>
+				    <div class="panel-body">
+				        <div class="col-md-6 user-about-me">
+				        	<h3 class="text-left text-uppercase">about me</h3>
+				        	<hr>
+				        	<p class="">I'm an open-minded, rude, emothional person who always feel confusinon to take a descision. You can read me but it's really hard to undersstand me. I love to play mystery and fell it when I walk alone. In this cruel world you have to be mystery otherwise you can't stay cool. the summer weather friends will take the advantages from you. </p>
+				        	<p> My favourite color is Black. I love to play Crikcet. My hobby is sleeping..ha ha ha! Stay cool and staly foolish - I believe.</p>
+				        </div>
+				        <div class="col-md-6 user-philosophy">
+				        	<h3 class="text-left text-uppercase">my philosophy</h3>
+				        	<hr>
+				        	<p class="">Philosophy is the study of general and fundamental problems, such as those connected with reality, existence, knowledge, values, reason, mind and language. Philosophy is distinguished from other ways addressing such problem byits critical.</p>
+				        	<p>Generally systemic approacend its reliance on rational argument. In more casual speech, by extension, "Philosophy" can refer to "the most basic beliefs, concepts and attitudes of an individual or group".</p>
+				        </div>
+				    </div>
+				</div>
+			</section> <!-- end of User information about about,philosophy -->
+
+			<!-- User info general -->
+			<section class="col-md-12 user-info">
+				<div class="panel panel-primary col-md-12 custom-panel">
+				    <div class="panel-heading">
+				        <h3 class="panel-title text-uppercase">information</h3>
+				    </div>
+				    <div class="panel-body">
+				    	<div class="col-md-12 user-info-menu">
+				    		<ul class="info-menu">
+				    			<li class="info-menu-single text-capitalize"><a href="" class="active">basic info</a></li>
+				    			<li class="info-menu-single text-capitalize"><a href="">education</a></li>
+				    			<li class="info-menu-single text-capitalize"><a href="">work</a></li>
+				    			<li class="info-menu-single text-capitalize"><a href="">family</a></li>
+				    			<li class="info-menu-single text-capitalize"><a href="">mailing address</a></li>
+				    		</ul>
+				    	</div>
+				    	<!-- User basic info -->
+				    	<div class="col-md-12 user-info-basic">
+				    		<div class="col-md-12 user-basic">
+				    			<h3 class="basic-info text-capitalize text-left">basic info</h3>
+				    			<hr>
+				    		</div>
+				    		<div class="col-md-10 col-md-offset-2">
+				    			<h4 class="basic-info-field">Full Name</h4>
+				    			<hr>
+				    			<h4 class="basic-info-field">Date of Birth</h4>
+				    			<hr>
+				    			<h4 class="basic-info-field">Gender</h4>
+				    			<hr>
+				    			<h4 class="basic-info-field">Religious View</h4>
+				    			
+				    		</div>
+				    	</div> <!-- end of User basic info -->
+
+				    	<!-- Education info -->
+				    	<div class="col-md-12 user-info-educatoin">
+				    		<div class="col-md-12 user-education">
+				    			<h3 class="education-info text-capitalize text-left">education</h3>
+				    			<hr>
+				    		</div>
+				    		<div class="col-md-10 col-md-offset-2">
+					    		<h4 class="basic-info-field">University</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Session</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Degree</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Subject</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Description</h4>
+					    		<hr>
+				    			<i class="fa fa-plus"></i><a href="" class="additonal-eductaion add">Add Educational Info</a>
+				    		</div>
+				    	</div> <!-- end of Education info -->
+						
+						<!-- Work info -->
+						<div class="col-md-12 user-info-work">
+				    		<div class="col-md-12 user-work">
+				    			<h3 class="work-info text-capitalize text-left">work</h3>
+				    			<hr>
+				    		</div>
+				    		<div class="col-md-10 col-md-offset-2">
+					    		<h4 class="basic-info-field">Designation</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Period</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Company</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Company Website</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Description</h4>
+					    		<hr>
+				    			<i class="fa fa-plus"></i><a href="" class="additonal-work add">Add Work Info</a>
+				    		</div>
+				    	</div>
+				    	<!-- Family info -->
+				    	<div class="col-md-12 user-info-family">
+				    		<div class="col-md-12 user-family">
+				    			<h3 class="family-info text-capitalize text-left">Family</h3>
+				    			<hr>
+				    		</div>
+				    		<div class="col-md-10 col-md-offset-2 user-family-members">
+				    			<h4 class="basic-info-field">Father</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Mother</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Sibiling</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Cousin</h4>
+					    		<hr>
+					    		<h4 class="basic-info-field">Life Partner</h4>
+								<hr>
+				    			<i class="fa fa-plus"></i><a href="" class="additonal-family add">Add Family Member</a>
+				    		</div>
+				    	</div> <!-- end of Family info -->
+
+				    	<!-- Mailing address info -->
+				    	<div class="col-md-12 user-info-mailing-address">
+				    		<div class="col-md-12 user-mailing-address">
+				    			<h3 class="mailing-info text-capitalize text-left">Mailing Adress</h3>
+				    			<hr>
+				    		</div>
+				    		<div class="col-md-10 col-md-offset-2 user-address-details">
+				    			<div class="col-md-12">
+				    				<div class="col-md-4">
+				    					<h4 class="basic-info-field">House No.</h4>
+					    				<hr>
+				    				</div>
+				    				<div class="col-md-4">
+				    					<h4 class="basic-info-field">Floor</h4>
+					    				<hr>
+				    				</div>
+				    				<div class="col-md-4">
+				    					<h4 class="basic-info-field">Road No.</h4>
+					    				<hr>
+				    				</div>
+				    			</div>
+				    			<div class="col-md-12">
+				    				<div class="col-md-4">
+				    					<h4 class="basic-info-field">Section No.</h4>
+					    				<hr>
+				    				</div>
+				    				<div class="col-md-4">
+				    					<h4 class="basic-info-field">City</h4>
+					    				<hr>
+				    				</div>
+				    				<div class="col-md-4">
+				    					<h4 class="basic-info-field">Country</h4>
+					    				<hr>
+				    				</div>
+				    			</div>
+				    			<div class="col-md-12">
+				    				<div class="col-md-4">
+					    				<h4 class="basic-info-field">Zip Code</h4>
+					    				
+					    			</div>
+				    			</div>
+				    		</div>
+				    	</div>
+				    </div>
+				</div>
+			</section> <!-- end of User information general -->
+
+			<!-- User Photos -->
+			<section class="col-md-12 user-photos">
+				<div class="panel panel-primary col-md-12 custom-panel">
+				    <div class="panel-heading">
+				        <h3 class="panel-title text-uppercase">photos</h3>
+				    </div>
+				    <div class="panel-body">
+				    	<div class="col-md-12 user-photos-menu">
+				    		<ul class="photos-menu">
+				    			<li class="photos-menu-single text-capitalize"><a href="" class="active">profile photos</a></li>
+				    			<li class="photos-menu-single text-capitalize"><a href="">cover photos</a></li>
+				    			<li class="photos-menu-single text-capitalize"><a href="">albums</a></li>
+				    		</ul>
+				    	</div>
+				 
+				    	<div class="col-md-12 photo-gallery">
+				    		<div class="panel panel-primary col-md-3 single-photo photo-gallery-panel">
+				    			<img src="images/pro_pic_01.jpg" alt="" class="gallery-image">
+				    			<div class="icon">
+				    				<ul class="icon-list">
+				    					<li class="single-icon"><a href=""><img src="images/view_icon.png" alt=""></a></li>
+				    					<li class="single-icon"><a href=""><img src="images/like_icon.png" alt=""></a></li>
+				    					<li class="single-icon"><a href=""><img src="images/comments_icons.png" alt=""></a></li>
+				    				</ul>
+				    				<ul class="icon-hit-number">
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    				</ul>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-photo photo-gallery-panel">
+				    			<img src="images/pro_pic_02.jpg" alt="" class="gallery-image">
+				    			<div class="icon">
+				    				<ul class="icon-list">
+				    					<li class="single-icon"><a href=""><img src="images/view_icon.png" alt=""></a></li>
+				    					<li class="single-icon"><a href=""><img src="images/like_icon.png" alt=""></a></li>
+				    					<li class="single-icon"><a href=""><img src="images/comments_icons.png" alt=""></a></li>
+				    				</ul>
+				    				<ul class="icon-hit-number">
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    				</ul>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-photo photo-gallery-panel">
+				    			<img src="images/pro_pic_03.jpg" alt="" class="gallery-image">
+				    			<div class="icon">
+				    				<ul class="icon-list">
+				    					<li class="single-icon"><a href=""><img src="images/view_icon.png" alt=""></a></li>
+				    					<li class="single-icon"><a href=""><img src="images/like_icon.png" alt=""></a></li>
+				    					<li class="single-icon"><a href=""><img src="images/comments_icons.png" alt=""></a></li>
+				    				</ul>
+				    				<ul class="icon-hit-number">
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    				</ul>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-photo photo-gallery-panel">
+				    			<img src="images/pro_pic_04.jpg" alt="" class="gallery-image">
+				    			<div class="icon">
+				    				<ul class="icon-list">
+				    					<li class="single-icon"><a href=""><img src="images/view_icon.png" alt=""></a></li>
+				    					<li class="single-icon"><a href=""><img src="images/like_icon.png" alt=""></a></li>
+				    					<li class="single-icon"><a href=""><img src="images/comments_icons.png" alt=""></a></li>
+				    				</ul>
+				    				<ul class="icon-hit-number">
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    				</ul>
+				    			</div>
+				    		</div>
+				    	
+				    		<div class="panel panel-primary col-md-3 single-photo photo-gallery-panel">
+				    			<img src="images/pro_pic_04.jpg" alt="" class="gallery-image">
+				    			<div class="icon">
+				    				<ul class="icon-list">
+				    					<li class="single-icon"><a href=""><img src="images/view_icon.png" alt=""></a></li>
+				    					<li class="single-icon"><a href=""><img src="images/like_icon.png" alt=""></a></li>
+				    					<li class="single-icon"><a href=""><img src="images/comments_icons.png" alt=""></a></li>
+				    				</ul>
+				    				<ul class="icon-hit-number">
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    					<li class="single-icon-hit-number"><span>77</span></li>
+				    				</ul>
+				    			</div>
+				    		</div>
+						</div>
+				    </div>
+				</div>
+			</section><!-- end of User Photos -->
+
+			<!-- User videos -->
+			<section class="col-md-12 user-videos">
+				<div class="panel panel-primary col-md-12 custom-panel">
+				    <div class="panel-heading">
+				        <h3 class="panel-title text-uppercase">videos</h3>
+				    </div>
+				    <div class="panel-body">
+				    	<div class="col-md-12 user-videos-menu">
+				    		<ul class="videos-menu">
+				    			<li class="videos-menu-single text-capitalize"><a href="" class="active">all videos</a></li>
+				    			<li class="videos-menu-single text-capitalize"><a href="">youTube channel</a></li>
+				    			<li class="videos-menu-single text-capitalize"><a href="">personal album</a></li>
+				    		</ul>
+				    	</div>
+				 
+				    	<div class="col-md-12 video-gallery">
+				    		<div class="panel panel-primary col-md-3 single-video video-gallery-panel">
+				    			<img src="images/beautiful_home.jpg" alt="" class="gallery-video">
+				    			<a href=""></a>
+				    			<div class="caption">
+				    				<span class="video-caption">My Beautiful Home</span>
+				    				<span class="video-length">5:21</span>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-video video-gallery-panel">
+				    			<img src="images/cutie_cutie.jpg" alt="" class="gallery-video">
+				    			<a href=""></a>
+				    			<div class="caption">
+				    				<span class="video-caption">Cutie Cutie can dance!</span>
+				    				<span class="video-length">5:21</span>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-video video-gallery-panel">
+				    			<img src="images/flower_vase.jpg" alt="" class="gallery-video">
+				    			<a href=""></a>
+				    			<div class="caption">
+				    				<span class="video-caption">LED Vase Show</span>
+				    				<span class="video-length">4:13</span>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-video video-gallery-panel">
+				    			<img src="images/jacson.jpg" alt="" class="gallery-video">
+				    			<a href=""></a>
+				    			<div class="caption">
+				    				<span class="video-caption">Just beat it!</span>
+				    				<span class="video-length">4:13</span>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-video video-gallery-panel">
+				    			<img src="images/pro_pic_04.jpg" alt="" class="gallery-video">
+				    			<a href=""></a>
+				    			<div class="caption">
+				    				<span class="video-caption">My Beautiful Home</span>
+				    				<span class="video-length">5:21</span>
+				    			</div>
+				    		</div>
+				    	</div>
+
+				    </div>
+				</div>
+			</section> <!-- end of User videso -->
+
+			<!-- User favourites -->
+			<section class="col-md-12 user-favourites">
+				<div class="panel panel-primary col-md-12 custom-panel">
+				    <div class="panel-heading">
+				        <h3 class="panel-title text-uppercase">Favourties</h3>
+				    </div>
+				    <div class="panel-body">
+				    	<div class="col-md-12 user-favourites-menu">
+				    		<ul class="videos-menu">
+				    			<li class="favourites-menu-single text-capitalize"><a href="" class="active">sportsperson</a></li>
+				    			<li class="favourites-menu-single text-capitalize"><a href="">music</a></li>
+				    			<li class="favourites-menu-single text-capitalize"><a href="">movies</a></li>
+				    			<li class="favourites-menu-single text-capitalize"><a href="">TV shows</a></li>
+				    			<li class="favourites-menu-single text-capitalize"><a href="">books</a></li>
+								<li class="favourites-menu-single text-capitalize"><a href="">cartoons</a></li>
+								<li class="favourites-menu-single text-capitalize"><a href="">all favourites</a></li>
+				    		</ul>
+				    	</div>
+				    	<div class="col-md-12 search-favourite">
+				    		 <div class="col-md-4">
+					            <div id="imaginary_container"> 
+					                <div class="input-group stylish-input-group">
+					                    <input type="text" class="form-control"  placeholder="Search for favourite" >
+					                    <span class="input-group-addon">
+					                        <button type="submit">
+					                            <span class="glyphicon glyphicon-search"></span>
+					                        </button>  
+					                    </span>
+					                </div>
+					            </div>
+					        </div>
+				    	</div>
+				 
+				    	<div class="col-md-12 favourite-gallery">
+				    		<div class="panel panel-primary col-md-3 single-favourite favourite-gallery-panel">
+				    			<img src="images/ab_de_villiers.jpg" alt="" class="gallery-favourite">
+				    	
+				    			<div class="caption">
+				    				<span class="favourite-caption text-center">AB de Villiers</span>	
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-favourite favourite-gallery-panel">
+				    			<img src="images/beckham.jpg" alt="" class="gallery-favourite">
+				  
+				    			<div class="caption">
+				    				<span class="favourite-caption text-center">David Beckham</span>
+				    			
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-favourite favourite-gallery-panel">
+				    			<img src="images/sharapova.jpg" alt="" class="gallery-favourite">
+				    
+				    			<div class="caption">
+				    				<span class="favourite-caption text-center">Maria Sharapova</span>
+				    		
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-favourite favourite-gallery-panel">
+				    			<img src="images/mashrafee.jpg" alt="" class="gallery-favourite">
+				    	
+				    			<div class="caption">
+				    				<span class="favourite-caption text-center">Mashrafee Mortaza</span>
+				    
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-favourite favourite-gallery-panel">
+				    			<img src="images/messi.jpg" alt="" class="gallery-favourite">
+				    			
+				    			<div class="caption">
+				    				<span class="favourite-caption text-center">Lionel Messi</span>
+				    
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-3 single-favourite favourite-gallery-panel">
+				    			<img src="images/vettori.jpg" alt="" class="gallery-favourite">
+				    			
+				    			<div class="caption">
+				    				<span class="favourite-caption text-center">Daniel Vettori</span>
+				    
+				    			</div>
+				    		</div>
+				    	</div>
+
+				    </div>
+				</div>
+			</section> <!-- end of User favourties -->
+
+			<!-- User connections -->
+			<section class="col-md-12 user-connections">
+				<div class="panel panel-primary col-md-12 custom-panel">
+				    <div class="panel-heading">
+				        <h3 class="panel-title text-uppercase">connections</h3>
+				    </div>
+				    <div class="panel-body">
+				    	<div class="col-md-12 user-connections-menu">
+				    		<ul class="videos-menu">
+				    			<li class="connections-menu-single text-capitalize"><a href="" class="active">followers <span class="follower-number">(12)</span></a></li>
+				    			<li class="connections-menu-single text-capitalize"><a href="">following <span class="following-number">(33)</span></a></li>
+				    		</ul>
+				    	</div>
+				 
+				    	<div class="col-md-12 connection-gallery">
+				    		<div class="panel panel-primary col-md-4 single-connection connection-gallery-panel">
+				    			<div class="panel panel-primary single-connection-image">
+				    				<img src="images/char-01.png" alt="" class="gallery-connection">
+				    			</div>
+				    			<div class="single-connection-image-info">
+				    				<h4 class="follower-name text-capitalize">Andro Mark</h4>
+				    				<h5 class="follower-designation text-capitalize">Graphic designer</h5>
+				    				<a href="" class="btn btn-primary text-capitalize">follow</a>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-4 single-connection connection-gallery-panel">
+				    			<div class="panel panel-primary single-connection-image">
+				    				<img src="images/char-2.png" alt="" class="gallery-connection">
+				    			</div>
+				 				<div class="single-connection-image-info">
+				    				<h4 class="follower-name text-capitalize">Andro Mark</h4>
+				    				<h5 class="follower-designation text-capitalize">Graphic designer</h5>
+				    				<a href="" class="btn btn-primary text-capitalize">follow</a>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-4 single-connection connection-gallery-panel">
+				    			<div class="panel panel-primary single-connection-image">
+				    				<img src="images/char-3.png" alt="" class="gallery-connection">
+				    			</div>
+				    			<div class="single-connection-image-info">
+				    				<h4 class="follower-name text-capitalize">Andro Mark</h4>
+				    				<h5 class="follower-designation text-capitalize">Graphic designer</h5>
+				    				<a href="" class="btn btn-primary text-capitalize">follow</a>
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="col-md-12 connection-gallery">
+				    		<div class="panel panel-primary col-md-4 single-connection connection-gallery-panel">
+				    			<div class="panel panel-primary single-connection-image">
+				    				<img src="images/char-4.png" alt="" class="gallery-connection">
+				    			</div>
+				    			<div class="single-connection-image-info">
+				    				<h4 class="follower-name text-capitalize">Andro Mark</h4>
+				    				<h5 class="follower-designation text-capitalize">Graphic designer</h5>
+				    				<a href="" class="btn btn-primary text-capitalize">follow</a>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-4 single-connection connection-gallery-panel">
+				    			<div class="panel panel-primary single-connection-image">
+				    				<img src="images/char-5.png" alt="" class="gallery-connection">
+				    			</div>
+				    			<div class="single-connection-image-info">
+				    				<h4 class="follower-name text-capitalize">Andro Mark</h4>
+				    				<h5 class="follower-designation text-capitalize">Graphic designer</h5>
+				    				<a href="" class="btn btn-primary text-capitalize">follow</a>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-4 single-connection connection-gallery-panel">
+				    			<div class="panel panel-primary single-connection-image">
+				    				<img src="images/char-6.png" alt="" class="gallery-connection">
+				    			</div>
+				    			<div class="single-connection-image-info">
+				    				<h4 class="follower-name text-capitalize">Andro Mark</h4>
+				    				<h5 class="follower-designation text-capitalize">Graphic designer</h5>
+				    				<a href="" class="btn btn-primary text-capitalize">follow</a>
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="col-md-12 connection-gallery">
+				    		<div class="panel panel-primary col-md-4 single-connection connection-gallery-panel">
+				    			<div class="panel panel-primary single-connection-image">
+				    				<img src="images/char-01.png" alt="" class="gallery-connection">
+				    			</div>
+				    			<div class="single-connection-image-info">
+				    				<h4 class="follower-name text-capitalize">Andro Mark</h4>
+				    				<h5 class="follower-designation text-capitalize">Graphic designer</h5>
+				    				<a href="" class="btn btn-primary text-capitalize">follow</a>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-4 single-connection connection-gallery-panel">
+				    			<div class="panel panel-primary single-connection-image">
+				    				<img src="images/char-2.png" alt="" class="gallery-connection">
+				    			</div>
+				 				<div class="single-connection-image-info">
+				    				<h4 class="follower-name text-capitalize">Andro Mark</h4>
+				    				<h5 class="follower-designation text-capitalize">Graphic designer</h5>
+				    				<a href="" class="btn btn-primary text-capitalize">follow</a>
+				    			</div>
+				    		</div>
+				    		<div class="panel panel-primary col-md-4 single-connection connection-gallery-panel">
+				    			<div class="panel panel-primary single-connection-image">
+				    				<img src="images/char-3.png" alt="" class="gallery-connection">
+				    			</div>
+				    			<div class="single-connection-image-info">
+				    				<h4 class="follower-name text-capitalize">Andro Mark</h4>
+				    				<h5 class="follower-designation text-capitalize">Graphic designer</h5>
+				    				<a href="" class="btn btn-primary text-capitalize">follow</a>
+				    			</div>
+				    		</div>
+				    	</div>
+
+				    </div>
+				</div>
+			</section> <!-- end of User connections -->
+
+			<!-- User contacts -->
+			<section class="col-md-12 user-contacts">
+				<div class="panel panel-primary col-md-12 custom-panel">
+				    <div class="panel-heading">
+				        <h3 class="panel-title text-uppercase">contacts</h3>
+				    </div>
+				    <div class="panel-body user-contact-body">
+				    	<div class="col-md-12 user-contacts-menu">
+				    		<ul class="videos-menu">
+				    			<li class="contacts-menu-single text-capitalize"><a href="" class="active">Basic Contacts</a></li>
+				    			<li class="contacts-menu-single text-capitalize"><a href="">accounts</a></li>
+				    			<li class="contacts-menu-single text-capitalize"><a href="">websites</a></li>
+				    		</ul>
+				    	</div>
+				    	<div class="col-md-12 user-contact-phone">
+				    		<img src="images/phone.png" alt="">
+				    		<span class="phone text-capitalize">phone</span>
+				    		<span class="phone-no">+037-4427-982-879</span><span class="phone-no-2">+041-4622-851-223</span>
+				    	</div>
+				    	<div class="col-md-12 user-contact-email">
+				    		<img src="images/email_icon.png" alt="">
+				    		<span class="email text-capitalize">email</span>
+				    		<span class="email-address">zoe_morgan123@abc.com</span>
+				    	</div>
+				    	<div class="col-md-12 user-contact-address">
+				    		<img src="images/message_icon.png" alt="">
+				    		<span class="address text-capitalize">address</span>
+				    		<span class="address-address">27/9, Park Street Avenue, San francisco, CA.</span>
+				    	</div>
+				    </div>
+				</div>
+			</section> <!-- end of User contacts -->
+
+			<!-- footer -->
+			<section class="col-md-12 user-footer">
+				<div class="panel panel-primary col-md-12 custom-panel">
+				    <div class="panel-body footer-panel">
+				    	<div class="col-md-12 footer-info">
+				    		<h3 class="copyright-info text-center"><em>2015 &copy; Theinverse Inc. All rights reserved</em></h3>
+				    	</div>
+				    </div>
+				</div>
+			</section>
+		</div>
 
 
-        </div>
-      </div>
-    </div>
-
-
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+	<!-- Necessary js files -->
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/material.min.js"></script>
+		<script src="js/ripples.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
 </html>
