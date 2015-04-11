@@ -1,0 +1,69 @@
+.todos > li{
+ list-style-type: none;
+}
+
+.nav-tabs > li{
+	float: none;
+	margin: 0;
+}
+
+.edit-in-place span {
+  cursor: pointer;
+}
+
+.edit-in-place input {
+  display: none;
+}
+
+.edit-in-place.active span {
+  display: none;
+}
+
+.edit-in-place.active input {
+  display: inline-block;
+}
+
+/*.site-search,.sortable{
+	margin-bottom: 60px;
+}
+
+.site-search{
+
+}
+
+.todo-list{
+	margin-top: 30px;
+}
+.active{
+	color: #333;
+}*/
+
+.nav-tabs>li>a:hover{
+	background-color: red;
+	color: #333;
+}
+
+.active{
+	background-color: #337ab7;
+}
+
+
+.add-task{
+	margin: 20px 0 20px 0;
+}
+
+
+
+.todo-list{
+	margin-left: -40px;
+}
+
+
+.site-copyright{
+	background-color: rgba(51, 122, 183, 0.63);
+	color: #eee;
+}
+.site-copyright a{
+	color: #ddd;
+}
+
