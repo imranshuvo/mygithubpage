@@ -1,200 +1,207 @@
 <!doctype html>
 <html>
-  <head><title>Differences</title></head>
+  <head>
+    <title>Differences</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
   <body>
+    <div class="container">
+      <table class="table table-bordered table-striped">
+      <tbody>
+      <tr><th>OSI(Open System Interconnection)</th><th>TCP/IP(Transmission Control Protocol / Internet Protocol)
+      </th></tr>
+      <tr><td>1. OSI provides layer functioning and also defines functions of all the layers.</td><td>1. TCP/IP model is more based on protocols and protocols are not flexible with other layers.</td></tr>
+      <tr><td>2. In OSI model the transport layer guarantees the delivery of packets</td><td>2. In TCP/IP model the transport layer does not guarantees delivery of packets.</td></tr>
+      <tr><td>3. Follows horizontal approach</td><td>3. Follows vertical approach.</td></tr>
+      <tr><td>4. OSI model has a separate presentation layer</td><td>4. TCP/IP does not have a separate presentation layer</td></tr>
+      <tr><td>5. OSI is a general model.</td><td>5. TCP/IP model cannot be used in any other application.</td></tr>
+      <tr><td>6. Network layer of OSI model provide both connection oriented and connectionless service. </td><td>6. The Network layer in TCP/IP model provides connectionless service.</td></tr>
+      <tr><td>7. OSI model has a problem of fitting the protocols in the model</td><td>7. TCP/IP model does not fit any protocol</td></tr>
+      <tr><td>8. Protocols are hidden in OSI model and are easily replaced as the technology changes. </td><td>8. In TCP/IP replacing protocol is not easy.</td></tr>
+      <tr><td>9. OSI model defines services, interfaces and protocols very clearly and makes clear distinction between them. </td><td>9. In TCP/IP it is not clearly separated its services, interfaces and protocols.</td></tr>
+      <tr><td>10. It has 7 layers</td><td>10. It has 4 layers</td></tr>
+      </tbody>
+      </table>
+      <table class="table table-bordered table-striped" style="margin-top: 20px">
+      <tbody>
+      <tr><th>Synchronous</th><th>Asynchronous
+      </th></tr>
+      <tr><td>1. needs clock signal between the sender and the receiver.</td><td>1. does not need clock signal between the sender and the receiver.</td></tr>
+      <tr><td>2. supports high data transfer rate</td><td>2. slower data transfer rate.</td></tr>
+      <tr><td>3.sender and receiver use the same clock signal</td><td>3. sender provides a synchronization signal to the receiver before starting the transfer of each message
+      .</td></tr>
+      </table>
+      <table class="table table-bordered table-striped" style="margin-top: 20px">
+      <tbody>
+      <tr><th>TDM</th><th>FDM
+      </th></tr>
+      <tr>
+        <td>1. Stands for Time Division Multiplexing.</td>
+        <td>1. Stands for Frequency Division Multiplexing.</td>
+      </tr>
+      <tr>
+        <td>2. TDM divides a channel by allocating a time period for each channel.</td>
+        <td>2. FDM divides the channel into multiple, but smaller frequency ranges.</td>
+      </tr>
+      <tr>
+        <td>3.TDM provides much better flexibility</td>
+        <td>3. Less flexibility than TDM.</td>
+      </tr>
+      <tr>
+        <td>4. Less latency than TDM.</td>
+        <td>4. FDM proves much better latency.</td>
+      </tr>
+      </table>
+      <table class="table table-bordered table-striped" style="margin-top: 20px">
+      <tbody>
+      <tr><th>PSK</th><th>FSK
+      </th></tr>
+      <tr>
+        <td>1. Stands for Phasse shift Keying.</td>
+        <td>1. Stands for Frequency Shift Keying.</td>
+      </tr>
+      <tr>
+        <td>2. Phase of the carrier signal is varied to represent two or more different signal elements.</td>
+        <td>2. Frequency of the carrier signal is varied to represent data.</td>
+      </tr>
+      <tr>
+        <td>3. Peak amplitude and frequency remain constant.</td>
+        <td>3. Amplitude and phase remain constant.</td>
+      </tr>
+      <tr>
+        <td>4. Require lesser bandwidth than FSK.</td>
+        <td>4. BFSK requires twice the bandwidth of BPSK.</td>
+      </tr>
+      <tr>
+        <td>5. Applications: WLAN etc.</td>
+        <td>5. Applications: over voice lines, in high frequency radio transmission etc.</td>
+      </tr>
+      </table>
+      <table cellspacing="2" cellpadding="2" border="2">
+      <thead>
+      <tr valign="TOP">
+      <td width="71" valign="TOP" rowspan="1" colspan="1">
+      <p>Feature</p>
+      </td>
+      <td width="161" valign="TOP" rowspan="1" colspan="1">
+      <p>Analog Characteristics</p>
+      </td>
+      <td width="187" valign="TOP" rowspan="1" colspan="1">
+      <p>Digital Characteristics</p>
+      </td>
+      </tr>
+      </thead><tbody>
+      <tr valign="TOP">
+      <td width="71" valign="TOP" rowspan="1" colspan="1">
+      <p>Signal</p>
+      </td>
+      <td width="161" valign="TOP" rowspan="1" colspan="1">
+      <p>Continuously variable, in both amplitude and frequency</p>
+      </td>
+      <td width="187" valign="TOP" rowspan="1" colspan="1">
+      <p>Discrete signal, represented as either changes in voltage or changes in light
+      levels</p>
+      </td>
+      </tr>
+      <tr valign="TOP">
+      <td width="71" valign="TOP" rowspan="1" colspan="1">
+      <p>Traffic measurement</p>
+      </td>
+      <td width="161" valign="TOP" rowspan="1" colspan="1">
+      <p>Hz (for example, a telephone channel is 4KHz)</p>
+      </td>
+      <td width="187" valign="TOP" rowspan="1" colspan="1">
+      <p>Bits per second (for example, a T-1 line carries 1.544Mbps, and an E-1 line
+      transports 2.048Mbps)</p>
+      </td>
+      </tr>
+      <tr valign="TOP">
+      <td width="71" valign="TOP" rowspan="1" colspan="1">
+      <p>Bandwidth</p>
+      </td>
+      <td width="161" valign="TOP" rowspan="1" colspan="1">
+      <p>Low bandwidth (4KHz), which means low data transmission rates (up to
+      33.6Kbps) because of limited channel bandwidth</p>
+      </td>
+      <td width="187" valign="TOP" rowspan="1" colspan="1">
+      <p>High bandwidth that can support high-speed data and emerging applications
+      that involve video and multimedia</p>
+      </td>
+      </tr>
+      <tr valign="TOP">
+      <td width="71" valign="TOP" rowspan="1" colspan="1">
+      <p>Network capacity</p>
+      </td>
+      <td width="161" valign="TOP" rowspan="1" colspan="1">
+      <p>Low; one conversation per telephone channel</p>
+      </td>
+      <td width="187" valign="TOP" rowspan="1" colspan="1">
+      <p>High; multiplexers enable multiple conversations to share a communications
+      channel and hence to achieve greater transmission efficiencies</p>
+      </td>
+      </tr>
+      <tr valign="TOP">
+      <td width="71" valign="TOP" rowspan="1" colspan="1">
+      <p>Network manageability</p>
+      </td>
+      <td width="161" valign="TOP" rowspan="1" colspan="1">
+      <p>Poor; a lot of labor is needed for network maintenance and control because
+      dumb analog devices do not provide management information streams that allow the
+      device to be remotely managed</p>
+      </td>
+      <td width="187" valign="TOP" rowspan="1" colspan="1">
+      <p>Good; smart devices produce alerts, alarms, traffic statistics, and
+      performance measurements, and technicians at a network control center (NCC) or
+      network operations center (NOC) can remotely monitor and manage the various
+      network elements</p>
+      </td>
+      </tr>
+      <tr valign="TOP">
+      <td width="71" valign="TOP" rowspan="1" colspan="1">
+      <p>Power requirement</p>
+      </td>
+      <td width="161" valign="TOP" rowspan="1" colspan="1">
+      <p>High because the signal contains a wide range of frequencies and
+      amplitudes</p>
+      </td>
+      <td width="187" valign="TOP" rowspan="1" colspan="1">
+      <p>Low because only two discrete signals&mdash;the one and the zero&mdash;need to
+      be transmitted</p>
+      </td>
+      </tr>
+      <tr valign="TOP">
+      <td width="71" valign="TOP" rowspan="1" colspan="1">
+      <p>Security</p>
+      </td>
+      <td width="161" valign="TOP" rowspan="1" colspan="1">
+      <p>Poor; when you tap into an analog circuit, you hear the voice stream in its
+      native form, and it is difficult to detect an intrusion</p>
+      </td>
+      <td width="187" valign="TOP" rowspan="1" colspan="1">
+      <p>Good; encryption can be used</p>
+      </td>
+      </tr>
+      <tr valign="TOP">
+      <td width="71" valign="TOP" rowspan="1" colspan="1">
+      <p>Error rates</p>
+      </td>
+      <td width="161" valign="TOP" rowspan="1" colspan="1">
+      <p>High; 10<sup>&ndash;5</sup> bits (that is, 1 in 100,000 bits) is guaranteed to
+      have an error</p>
+      </td>
+      <td width="187" valign="TOP" rowspan="1" colspan="1">
+      <p>Low; with twisted-pair, 10<sup>&ndash;7 </sup>(that, is 1 in 10 million bits
+      per second) will have an error, with satellite, 10<sup>&ndash;9</sup> (that is, 1
+      in 1 billion per second) will have an error, and with fiber,
+      10<sup>&ndash;11</sup> (that is only 1 in 10 trillion bits per second) will have
+      an error</p>
+      </td>
+      </tr>
+      </tbody>
+      </table>
 
-<table class="table table-bordered table-striped">
-<tbody>
-<tr><th>OSI(Open System Interconnection)</th><th>TCP/IP(Transmission Control Protocol / Internet Protocol)
-</th></tr>
-<tr><td>1. OSI provides layer functioning and also defines functions of all the layers.</td><td>1. TCP/IP model is more based on protocols and protocols are not flexible with other layers.</td></tr>
-<tr><td>2. In OSI model the transport layer guarantees the delivery of packets</td><td>2. In TCP/IP model the transport layer does not guarantees delivery of packets.</td></tr>
-<tr><td>3. Follows horizontal approach</td><td>3. Follows vertical approach.</td></tr>
-<tr><td>4. OSI model has a separate presentation layer</td><td>4. TCP/IP does not have a separate presentation layer</td></tr>
-<tr><td>5. OSI is a general model.</td><td>5. TCP/IP model cannot be used in any other application.</td></tr>
-<tr><td>6. Network layer of OSI model provide both connection oriented and connectionless service. </td><td>6. The Network layer in TCP/IP model provides connectionless service.</td></tr>
-<tr><td>7. OSI model has a problem of fitting the protocols in the model</td><td>7. TCP/IP model does not fit any protocol</td></tr>
-<tr><td>8. Protocols are hidden in OSI model and are easily replaced as the technology changes. </td><td>8. In TCP/IP replacing protocol is not easy.</td></tr>
-<tr><td>9. OSI model defines services, interfaces and protocols very clearly and makes clear distinction between them. </td><td>9. In TCP/IP it is not clearly separated its services, interfaces and protocols.</td></tr>
-<tr><td>10. It has 7 layers</td><td>10. It has 4 layers</td></tr>
-</tbody>
-</table>
-<table class="table table-bordered table-striped" style="margin-top: 20px">
-<tbody>
-<tr><th>Synchronous</th><th>Asynchronous
-</th></tr>
-<tr><td>1. needs clock signal between the sender and the receiver.</td><td>1. does not need clock signal between the sender and the receiver.</td></tr>
-<tr><td>2. supports high data transfer rate</td><td>2. slower data transfer rate.</td></tr>
-<tr><td>3.sender and receiver use the same clock signal</td><td>3. sender provides a synchronization signal to the receiver before starting the transfer of each message
-.</td></tr>
-</table>
-<table class="table table-bordered table-striped" style="margin-top: 20px">
-<tbody>
-<tr><th>TDM</th><th>FDM
-</th></tr>
-<tr>
-  <td>1. Stands for Time Division Multiplexing.</td>
-  <td>1. Stands for Frequency Division Multiplexing.</td>
-</tr>
-<tr>
-  <td>2. TDM divides a channel by allocating a time period for each channel.</td>
-  <td>2. FDM divides the channel into multiple, but smaller frequency ranges.</td>
-</tr>
-<tr>
-  <td>3.TDM provides much better flexibility</td>
-  <td>3. Less flexibility than TDM.</td>
-</tr>
-<tr>
-  <td>4. Less latency than TDM.</td>
-  <td>4. FDM proves much better latency.</td>
-</tr>
-</table>
-<table class="table table-bordered table-striped" style="margin-top: 20px">
-<tbody>
-<tr><th>PSK</th><th>FSK
-</th></tr>
-<tr>
-  <td>1. Stands for Phasse shift Keying.</td>
-  <td>1. Stands for Frequency Shift Keying.</td>
-</tr>
-<tr>
-  <td>2. Phase of the carrier signal is varied to represent two or more different signal elements.</td>
-  <td>2. Frequency of the carrier signal is varied to represent data.</td>
-</tr>
-<tr>
-  <td>3. Peak amplitude and frequency remain constant.</td>
-  <td>3. Amplitude and phase remain constant.</td>
-</tr>
-<tr>
-  <td>4. Require lesser bandwidth than FSK.</td>
-  <td>4. BFSK requires twice the bandwidth of BPSK.</td>
-</tr>
-<tr>
-  <td>5. Applications: WLAN etc.</td>
-  <td>5. Applications: over voice lines, in high frequency radio transmission etc.</td>
-</tr>
-</table>
-<table cellspacing="2" cellpadding="2" border="2">
-<thead>
-<tr valign="TOP">
-<td width="71" valign="TOP" rowspan="1" colspan="1">
-<p>Feature</p>
-</td>
-<td width="161" valign="TOP" rowspan="1" colspan="1">
-<p>Analog Characteristics</p>
-</td>
-<td width="187" valign="TOP" rowspan="1" colspan="1">
-<p>Digital Characteristics</p>
-</td>
-</tr>
-</thead><tbody>
-<tr valign="TOP">
-<td width="71" valign="TOP" rowspan="1" colspan="1">
-<p>Signal</p>
-</td>
-<td width="161" valign="TOP" rowspan="1" colspan="1">
-<p>Continuously variable, in both amplitude and frequency</p>
-</td>
-<td width="187" valign="TOP" rowspan="1" colspan="1">
-<p>Discrete signal, represented as either changes in voltage or changes in light
-levels</p>
-</td>
-</tr>
-<tr valign="TOP">
-<td width="71" valign="TOP" rowspan="1" colspan="1">
-<p>Traffic measurement</p>
-</td>
-<td width="161" valign="TOP" rowspan="1" colspan="1">
-<p>Hz (for example, a telephone channel is 4KHz)</p>
-</td>
-<td width="187" valign="TOP" rowspan="1" colspan="1">
-<p>Bits per second (for example, a T-1 line carries 1.544Mbps, and an E-1 line
-transports 2.048Mbps)</p>
-</td>
-</tr>
-<tr valign="TOP">
-<td width="71" valign="TOP" rowspan="1" colspan="1">
-<p>Bandwidth</p>
-</td>
-<td width="161" valign="TOP" rowspan="1" colspan="1">
-<p>Low bandwidth (4KHz), which means low data transmission rates (up to
-33.6Kbps) because of limited channel bandwidth</p>
-</td>
-<td width="187" valign="TOP" rowspan="1" colspan="1">
-<p>High bandwidth that can support high-speed data and emerging applications
-that involve video and multimedia</p>
-</td>
-</tr>
-<tr valign="TOP">
-<td width="71" valign="TOP" rowspan="1" colspan="1">
-<p>Network capacity</p>
-</td>
-<td width="161" valign="TOP" rowspan="1" colspan="1">
-<p>Low; one conversation per telephone channel</p>
-</td>
-<td width="187" valign="TOP" rowspan="1" colspan="1">
-<p>High; multiplexers enable multiple conversations to share a communications
-channel and hence to achieve greater transmission efficiencies</p>
-</td>
-</tr>
-<tr valign="TOP">
-<td width="71" valign="TOP" rowspan="1" colspan="1">
-<p>Network manageability</p>
-</td>
-<td width="161" valign="TOP" rowspan="1" colspan="1">
-<p>Poor; a lot of labor is needed for network maintenance and control because
-dumb analog devices do not provide management information streams that allow the
-device to be remotely managed</p>
-</td>
-<td width="187" valign="TOP" rowspan="1" colspan="1">
-<p>Good; smart devices produce alerts, alarms, traffic statistics, and
-performance measurements, and technicians at a network control center (NCC) or
-network operations center (NOC) can remotely monitor and manage the various
-network elements</p>
-</td>
-</tr>
-<tr valign="TOP">
-<td width="71" valign="TOP" rowspan="1" colspan="1">
-<p>Power requirement</p>
-</td>
-<td width="161" valign="TOP" rowspan="1" colspan="1">
-<p>High because the signal contains a wide range of frequencies and
-amplitudes</p>
-</td>
-<td width="187" valign="TOP" rowspan="1" colspan="1">
-<p>Low because only two discrete signals&mdash;the one and the zero&mdash;need to
-be transmitted</p>
-</td>
-</tr>
-<tr valign="TOP">
-<td width="71" valign="TOP" rowspan="1" colspan="1">
-<p>Security</p>
-</td>
-<td width="161" valign="TOP" rowspan="1" colspan="1">
-<p>Poor; when you tap into an analog circuit, you hear the voice stream in its
-native form, and it is difficult to detect an intrusion</p>
-</td>
-<td width="187" valign="TOP" rowspan="1" colspan="1">
-<p>Good; encryption can be used</p>
-</td>
-</tr>
-<tr valign="TOP">
-<td width="71" valign="TOP" rowspan="1" colspan="1">
-<p>Error rates</p>
-</td>
-<td width="161" valign="TOP" rowspan="1" colspan="1">
-<p>High; 10<sup>&ndash;5</sup> bits (that is, 1 in 100,000 bits) is guaranteed to
-have an error</p>
-</td>
-<td width="187" valign="TOP" rowspan="1" colspan="1">
-<p>Low; with twisted-pair, 10<sup>&ndash;7 </sup>(that, is 1 in 10 million bits
-per second) will have an error, with satellite, 10<sup>&ndash;9</sup> (that is, 1
-in 1 billion per second) will have an error, and with fiber,
-10<sup>&ndash;11</sup> (that is only 1 in 10 trillion bits per second) will have
-an error</p>
-</td>
-</tr>
-</tbody>
-</table>
+    </div>
   </body>
 </html>
