@@ -1,6 +1,6 @@
 var shuvo = angular.module('shuvo',['ngRoute']);
 
-shuvo.config(function($routeProvider){
+shuvo.config(['$routeProvider',function($routeProvider){
 	$routeProvider.
 		when('/',{
 			templateUrl: 'views/home.html',
@@ -12,4 +12,4 @@ shuvo.config(function($routeProvider){
 		when('/difference',{
 			templateUrl: 'views/differences.html'
 		});
-});
+}]);
