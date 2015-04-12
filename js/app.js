@@ -1,6 +1,6 @@
-var todo = angular.module('todo',['ngRoute','ListCtrl','ListDir','LocalStorageModule']);
+var shuvo = angular.module('shuvo',['ngRoute']);
 
-todo.config(function($routeProvider,$httpProvider){
+shuvo.config(function($routeProvider){
 	$routeProvider.
 		when('/',{
 			templateUrl: 'views/home.html',
