@@ -5,5 +5,11 @@ todo.config(function($routeProvider,$httpProvider){
 		when('/',{
 			templateUrl: 'views/home.html',
 			controller: 'ListController'
+		}).
+		when('/communcation',{
+			templateUrl: 'views/communcation.html'
+		}).
+		when('/difference',{
+			templateUrl: 'views/differences.html'
 		});
 });
