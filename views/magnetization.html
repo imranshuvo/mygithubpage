@@ -1,0 +1,69 @@
+<header>
+       <div class="panel panel-default">
+                  <nav class="navbar navbar-default">
+                      <!-- Brand and toggle get grouped for better mobile display -->
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="#/">Home</a>
+                      </div>
+                              <ul class="nav navbar-nav">
+                                    <li class="active sub-menu-level-1"><a class="sub-menu-1" href="#electronic-material">Electronic Material</a></li>
+                              </ul>
+                  </nav>
+      </div>
+</header>
+<div class="panel panel-primary">
+<div class="panel-body">
+<div id="accordion">
+  <h3>Discuss about the ferromagnetic hysteresis loop ?</h3>
+  <div class="hysteresis-loop">
+      <p class="para">
+          Any ferromagnetic or ferrimagnetic material that is at a temperature below T c is
+          composed of small-volume regions in which there is a mutual alignment in the same
+          direction of all magnetic dipole moments, as illustrated in Figure 1. Such a re-
+          gion is called a domain, and each one is magnetized to its saturation magnetization. In a macroscopic piece of material, there will be a large number of domains, and all may have different magnetization orientations. The magnitude of the M field for the entire solid is the vector sum of the magnetizations of all the domains. 
+      </p>
+      <img src="images/domain.png" alt=""><span>figure 1</span>
+      <p>
+          Flux density B and field intensity H are not proportional for ferromagnets and
+          ferrimagnets. If the material is initially unmagnetized, then B varies as a function
+          of H as shown in Figure 2. The curve begins at the origin, and as H is increased,
+          the B field begins to increase slowly, then more rapidly, finally leveling off and be-
+          coming independent of H. This maximum value of B is the saturation flux density
+          B<span class="bottom">s</span> , and the corresponding magnetization is the saturation magnetization M<span class="bottom">s</span>. The slope of the B-versus-H curve at H = 0 is specified as a material property, which is termed the initial permeability &mu;<span class="bottom">i</span> , as indicated in Figure 2. As an H field is applied, the domains change shape and size by the movement of domain boundaries. Initially, the moments of the constituent domains are randomly oriented such that there is no net B (or M) field (inset U). As the external field is applied, the domains that are oriented in directions favorable to (or nearly aligned with) the applied field grow at the expense of those that are unfavorably oriented (insets V through X). This process continues with increasing field strength until the macroscopic specimen becomes a single domain, which is nearly aligned with the field (inset Y). Sat-uration is achieved when this domain, by means of rotation, becomes oriented with the H field (inset Z).
+      </p>
+      <img src="images/b_H.png" alt=""><span>figure 2</span>
+      <p>
+          From saturation, point S in Figure 3, as the H field is reduced by reversal
+          of field direction, the curve does not retrace its original path. A hysteresis effect is
+          produced in which the B field lags behind the applied H field, or decreases at a
+          lower rate. Upon reversal of the field direction from saturation (point S in Figure 3), the process by which the domain structure changes is reversed. The resistance to
+          movement of domain walls that occurs in response to the increase of the mag-
+          netic field in the opposite direction; this accounts for the lag of B with H, or the
+          hysteresis. 
+      </p>
+      <img src="images/flux.png" alt=""><span>figure 3</span>
+      <p>
+          To reduce the B field within the specimen to zero (point C on Figure 3),an H field of magnitude -H<span class="bottom">c</span> must be applied in a direction opposite to that of the original field; H<span class="bottom">c</span> is called the coercivity, or sometimes the coercive force. Upon con-
+          tinuation of the applied field in this reverse direction, as indicated in the figure, sat-
+          uration is ultimately achieved in the opposite sense, corresponding to point S'. A
+          second reversal of the field to the point of the initial saturation (point S) completes
+          the symmetrical hysteresis loop.
+      </p>
+  </div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+<script type="text/javascript">
+      $('#accordion').accordion({
+             collapsible: true,
+              heightStyle: "content",
+              icons: null,
+              active: false
+      });
+</script>

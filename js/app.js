@@ -26,6 +26,9 @@ shuvo.config(['$routeProvider',function($routeProvider){
 		when('/crystal',{
 			templateUrl: 'views/crystal.html'
 		}).
+		when('/magnetization',{
+			templateUrl: 'views/magnetization.html'
+		}).
 		otherwise({
 			redirectTo: '/'
 		});
