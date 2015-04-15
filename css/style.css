@@ -37,5 +37,8 @@ body,html{
     }
     .hysteresis-loop img{
     width: 100%;
-}
+    }
+    .molecular-solids img{
+        width: 100% !important;
+    }
 }
