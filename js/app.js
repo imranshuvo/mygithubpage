@@ -29,6 +29,9 @@ shuvo.config(['$routeProvider',function($routeProvider){
 		when('/magnetization',{
 			templateUrl: 'views/magnetization.html'
 		}).
+		when('/static-electric',{
+			templateUrl: 'views/electric.html'
+		}).
 		otherwise({
 			redirectTo: '/'
 		});
