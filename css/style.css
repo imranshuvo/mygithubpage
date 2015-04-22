@@ -30,7 +30,10 @@ body,html{
 .hysteresis-loop img{
     width: 50%;
 }
-@media screen and (max-width: 767px){
+.img-smaller{
+    width: 60%;
+}
+@media screen and (max-width: 767px) and (min-width: 421px){
     .sub-menu-level-1 {
     margin-left: 4%;
     width: 90%;
@@ -40,5 +43,13 @@ body,html{
     }
     .molecular-solids img{
         width: 100% !important;
+    }
+    .img-smaller{
+    width: 100%;
+    }
+}
+@media screen and (max-width: 420px){
+    .vector_potential{
+        width: 
     }
 }
