@@ -38,26 +38,19 @@
         <li> Manufactured on a smaller scale etc.</li>
       </ul>
   </div>
-  <h3>PCM vs Delta Modulation</h3>
+  <h3>Maskable vs Non-maskable</h3>
   <div>
             <table class="table table-bordered table-striped">
                   <tbody>
-                        <tr><th class="text-center">PCM</th><th class="text-center">Delta Modulation
+                        <tr><th class="text-center">Maskable</th><th class="text-center">Non-maskable
                         </th></tr>
-                        <tr><td> a pulse code modulation technique in which the amplitude of an analog signal is converted to a binary value represented as a series of pulses.</td><td> A Delta modulation (DM or Δ-modulation) is an analog-to-digital and digital-to-analog signal conversion technique used for transmission of voice information where quality is not of primary importance.</td></tr>
-                        <tr><td> It can use 4.8 or 16 bits per sample</td><td> It usees only one bit for one sample.</td></tr>
-                        <tr><td>The number of levels (step size)depend of number of bits.</td><td> 
-                        Step size is fixed and can not be varied.</td></tr>
-                        <tr><td>Highest bandwidth is required since number of bits are high.</td><td> 
-                       Lowest badwidth required.</td></tr>
-                       <tr><td>There is no feedback in transmitter and receiver.</td><td> 
-                       Feedback exists in transmitter.</td></tr>
-                       <tr><td>System is complex.</td><td> 
-                       Simple system.</td></tr>
-                       <tr><td>SNR is good.</td><td> 
-                       SNR is poor.</td></tr>
-                       <tr><td>Applicatios: Audio and video telephony.</td><td> 
-                       Applications: Speech and images.</td></tr>
+                        <tr><td> the interrupt which can be ignored by the processor ,while performing its operations are called maskable interrupts..</td><td> where as the non maskable interrupts are the interrupts which cannot be ignored.</td></tr>
+                        <tr><td> . generally maskable interrupts are the interrupts that comes from the pheripheral devices. </td><td> generally these type of interrupts are specified to be software interrupts.</td></tr>
+                        <tr><td> A maskable interrupt may be prevented from executing by setting a bit in a cpu register.</td>
+                       <td> A NMI is a hardware thing, and will load the program counter with its execute address regardless of settings. </td></tr>
+                       
+                       <tr><td>Example:  mouse click,memory read etc .</td><td> 
+                       Example: power failure,software corrupted etc.</td></tr>
                   </tbody>
             </table>
       </div>
