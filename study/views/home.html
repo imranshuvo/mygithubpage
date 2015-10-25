@@ -1,0 +1,69 @@
+<section ng-init="init()">
+	<div class="col-md-12">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="panel panel-info">
+					<div class="panel-body">
+					
+					<!-- Sortable -->
+						<div class="col-md-3 sortable">
+							<ul class="nav nav-tabs">
+								<li ng-class="{'active' : show == 'All' }" ng-click="show='All'"><a href="#/">All Task</a></li>
+								<li ng-class="{'active' : show == 'Incomplete' }" ng-click="show='Incomplete'"><a href="#/">Incomplete</a></li>
+								<li ng-class="{'active' : show == 'Complete' }" ng-click="show='Complete'"><a href="#/">Completed</a></li>
+							</ul>
+						</div>
+					<!--End of sortable -->
+					
+
+					<!-- Content section -->
+
+					<!-- Search form -->
+						<div class="col-md-9">
+							<!-- <div class="input-group col-md-12">
+								<input type="text" class="form-control" placeholder="Search a task" name="q" ng-model="todoSearch">
+								<div class="input-group-btn">
+									<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+								</div>
+							</div> -->
+							<input type="text" name="q" value="" id="newtab-search-text" maxlength="256" dir="auto" autocomplete="off" aria-autocomplete="true" aria-controls="searchSuggestionTable" aria-expanded="false" ng-model="todoSearch"/>
+							<input type="submit" id="newtab-search-submit" value="Search"/>
+
+					<!-- end of search form -->
+					
+					
+					<!-- Add task -->
+					<form ng-submit="add()">
+						<!-- <div class="col-md-12"> -->
+							<div class="input-group add-task">
+							      <input required ng-model="newTodo" type="text" name="todo" class="form-control col-md-10" placeholder="Add a new task" >
+							      <span class="input-group-btn">
+							        <button class="btn btn-primary" type="submit">Add</button>
+							      </span>
+							</div>
+
+						<!-- </div> -->
+					</form>
+					<!--End add task -->
+
+					<!-- List of the task -->
+						<div class="todo-list">
+							<ul class="todos">
+								<li ng-repeat="todo in todos | filter: sort | filter : todoSearch">
+									<input ng-model="todo.isDone" type="checkbox">
+									<edit-in-place value="todo.taskName"></edit-in-place>
+									<button type="button" class="close pull-right" aria-hidden="true" ng-click="deleteTodo($index)">×</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+				<!-- End of content -->
+
+		    	</div>
+			</div>	
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+</section>

@@ -1,0 +1,741 @@
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+    background-color: #F7F5F6;
+    position: relative;
+    font-family: 'Noto Serif', serif;
+    font-weight: normal;
+ }
+ .container{
+    width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+ }
+ .col-md-12{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.panel-body{
+    margin-bottom: 5%;
+}
+a{
+    color: #ffffff;
+}
+a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.active{
+    color: #000 !important;
+    border-bottom: 3px solid #3EABED;
+}
+
+a:active{
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li{
+    font-family: 'Philosopher', sans-serif;
+    font-weight: normal;
+}
+.slicknav_menu{
+    display: none;
+}
+.user-about,
+.user-info,
+.user-photos,
+.user-videos,
+.user-favourites,
+.user-connections,
+.user-contacts,
+.user-footer{
+    width: 98%;
+    margin-left: 1%;
+}
+
+.site-header{
+    background-image: url("../images/user_cover_photo.jpg");
+    background-size: cover;
+    margin-bottom: 20px;
+    min-height: 645px; 
+}
+.site-logo img{
+    position: relative;
+    left: 20px;
+    top: -45px;
+    width: 200px;
+}
+.user-intro{
+    color: white;
+    position: relative;
+    top: 95px;
+}
+.user-address-arrow{
+    display: inline;
+    margin-left: 213px;
+    width: 36px
+}
+.user-address{
+    display: inline;
+}
+.signle-menu.text-uppercase,
+.info-menu-single.text-capitalize,
+.photos-menu-single.text-capitalize,
+.videos-menu-single.text-capitalize,
+.favourites-menu-single.text-capitalize,
+.connections-menu-single.text-capitalize,
+.contacts-menu-single.text-capitalize{
+    display: inline;
+    list-style-type: none;
+    color: white;
+    font-size: 19px;
+    margin: 0 20px;
+}
+
+
+.site-menu{
+    background-color: #4cbec5;
+    margin-top: 260px;
+    padding: 12px;
+    opacity:0.7;
+}
+.custom-panel{
+    padding: 0px 0px;
+}
+.panel-primary > .panel-heading{
+    background-color: #49E8FE;
+    padding: 20px 15px;
+}
+
+.panel-title{
+    font-size: 35px;
+    letter-spacing: 3px;
+    padding-left: 15px;
+}
+.user-about-me hr,
+.user-philosophy hr{
+    border-color: #49E8FE;
+    border-width: 3px 0 0;
+    width: 12%;
+}
+
+/* user info */
+.user-basic,
+.user-education,
+.user-family,
+.user-mailing-address,
+.user-work{
+    margin-left: 1.5%;
+}
+.user-address-details {
+    margin-left: 15%;
+}
+.user-mailing-address hr,
+.user-education hr,
+.user-basic hr,
+.user-family hr,
+.user-work hr{
+    border-color: #49E8FE;
+    border-width: 3px 0 0;
+    width: 6%;
+}
+.basic-info-field{
+    color: #9f9f9f;
+}
+.add{
+    color: #3ea9ea;
+    margin-left: 5px;
+}
+.fa{
+    color: #3ea9ea;
+}
+a.add:hover{
+    color: #3ea9ea;
+    text-decoration: underline;
+}
+.photo-gallery div:nth-child(5),
+.video-gallery div:nth-child(5),
+.favourite-gallery div:nth-child(5) {
+        margin-left: 11px;
+    }
+
+
+/* Photos and videos */
+
+.photos-menu,
+.info-menu,
+.videos-menu,
+.favourites-menu,
+.connections-menu,
+.contacts-menu{
+    padding-left: 0px;
+}
+.photos-menu-single a,
+.info-menu-single a,
+.videos-menu-single a,
+.favourites-menu-single a,
+.connections-menu-single a,
+.contacts-menu-single a{
+    color: #8B8B8B;
+}
+
+.photos-menu-single,
+.info-menu-single,
+.videos-menu-single,
+.favourites-menu-single,
+.connections-menu-single,
+.contacts-menu-single{
+    font-size: 22px !important;
+}
+.single-video{
+    position: relative;
+}
+.single-video a{
+   position: absolute;
+   display: block;
+   background: url('../images/play_icons.png');
+   height: 84px;
+   left: 96px;
+   top: 60px;
+   width: 84px;
+}
+.single-photo img,
+.single-video img,
+.single-favourite img,
+.single-connections img{
+    width: 100%;
+    padding: 10px;
+}
+.icon{
+    margin-left: 110px;
+    margin-top: -18px;
+}
+.single-icon{
+    margin-right: 13px;
+}
+.single-icon,
+.single-icon-hit-number{
+    display: inline;
+    list-style-type: none;
+}
+.single-icon img{
+    height: auto;
+    width: 33px !important;
+}
+.icon-hit-number{
+    margin-top: -28px;
+}
+.single-icon-hit-number{
+    margin-right: 18px;
+    margin-left: 4px;
+}
+.caption{
+    padding: 0px 0px 10px 0px;
+    font-size: 16px;
+}
+.video-length{
+    color: #818181;
+    float: right;
+}
+.favourite-caption{
+    display: block;
+}
+
+.user-footer{
+    color: #49E8FE;
+}
+.copyright-info{
+    padding: 50px;
+}
+
+   
+    
+.panel.panel-primary.col-md-3.single-photo.photo-gallery-panel,
+.panel.panel-primary.col-md-3.single-video.video-gallery-panel,
+.panel.panel-primary.col-md-3.single-favourite.favourite-gallery-panel,
+.panel.panel-primary.col-md-3.single-connections.connection-gallery-panel {
+    width: 23%;
+    margin-right: 20px;
+}
+.single-photo img,
+.single-video img,
+.single-favourite img{
+    margin-left: -7px;
+    padding: 10px 0;
+    width: 105%;
+}
+.photo-gallery div:first-child,
+.video-gallery div:first-child,
+.favourite-gallery div:first-child,
+.connection-gallery div:first-child{
+    margin-left: 11px;
+}
+
+/* user connections */
+
+.stylish-input-group .input-group-addon{
+    
+}
+.stylish-input-group .form-control{
+    border-right:0; 
+    box-shadow:0 0 0; 
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.search-favourite{
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+.single-connection.connection-gallery-panel{
+    margin-right: 1%;
+    width: 31.333%;
+}
+
+.gallery-connection{
+    width: 100%;
+}
+.single-connection-image {
+    border-radius: 100%;
+    float: left;
+    margin-top: 20px;
+    width: 50%
+}
+.single-connection-image-info {
+    float: right;
+    margin-top: 45px;
+}
+.follower-name {
+    color: #5abcfe;
+    font-size: 26px;
+}
+.follower-designation {
+    color: #7e7e7e;
+    text-align: center;
+}
+.user-connections-menu,
+.user-videos-menu,
+.user-photos-menu {
+    margin-bottom: 3%;
+}
+
+/* user contacts */
+
+.user-contact-body {
+    margin-bottom: 75px;
+}
+.user-contact-email {
+    margin-bottom: 15px;
+}
+
+.user-contact-phone,
+.user-contact-email,
+.user-contact-address{
+    margin-top: 3%;
+}
+
+.user-contact-phone > img,
+.user-contact-email > img,
+.user-contact-address > img{
+    width: 3%;
+    margin-left: 5%;
+}
+.phone,
+.email,
+.address{
+    font-size: 160%;
+    margin-left: 3%;
+    color: #8B8B8B;
+}
+.phone-no,
+.phone-no-2,
+.email-address,
+.address-address{
+    font-size: 20px;
+}
+.address-address{
+    margin-left: 3%;
+}
+.email-address{
+    margin-left: 5%;
+}
+.phone-no{
+    margin-left:4.5%;
+}
+.phone-no-2{
+    display: block;
+    margin-left: 21.5%;
+}
+
+
+/* Footer */
+.footer-panel {
+    margin-bottom: 0;
+}
+/* ==========================================================================
+    Responsive styles
+   ========================================================================== */
+
+@media screen and (max-width: 600px){
+    .site-header {
+        background-image: url("../images/user_cover_photo.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        min-height: 0px;
+    }
+    .site-logo img {
+        left: 2px;
+        position: relative;
+        top: -30px;
+        width: 25%;
+    }
+    .user-intro{
+        top: -60px;
+    }
+    .user-designation, 
+    .user-name{
+        margin: 0px;
+    }
+    .user-address-arrow{
+        margin-left: 31.5%;
+        font-size: 30px;
+    }
+    .site-menu {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px ) and (max-width: 1279px){
+    .slicknav_menu{
+        display: none;
+    }
+    .site-header {
+        background-image: url("../images/user_cover_photo.jpg");
+        background-size: 100% auto;
+        margin-bottom: 8px;
+        min-height: 530px;
+        background-repeat: no-repeat;
+    }
+    .site-menu{
+        margin-top:145px;
+    }
+    .signle-menu.text-uppercase, .info-menu-single.text-capitalize, 
+    .photos-menu-single.text-capitalize, 
+    .videos-menu-single.text-capitalize, 
+    .favourites-menu-single.text-capitalize, 
+    .connections-menu-single.text-capitalize, 
+    .contacts-menu-single.text-capitalize{
+        font-size: 17px;
+        margin: 0 10px;
+    }
+    .photo-gallery div:nth-child(4),
+    .video-gallery div:nth-child(4),
+    .favourite-gallery div:nth-child(4) {
+        margin-left: 11px;
+        margin-right: 0px !important;
+    }
+
+    .user-intro{
+        top: -17px;
+    }
+    .user-address-arrow{
+        margin-left: 131px;
+    }
+    .panel.panel-primary.col-md-3.single-photo.photo-gallery-panel, 
+    .panel.panel-primary.col-md-3.single-video.video-gallery-panel, 
+    .panel.panel-primary.col-md-3.single-favourite.favourite-gallery-panel, 
+    .panel.panel-primary.col-md-3.single-connections.connection-gallery-panel{
+        margin-right: 8px;
+        width: 32%;
+    }
+    
+    .single-connection-image{
+        border-radius: 70px;
+        width:45%;
+    }
+    .single-connection-image-info{
+        margin-top: 15px;
+    }
+    .follower-name{
+        font-size: 24px;
+    }
+    .phone-no-2{
+        margin-left: 23.4%;
+    }
+    .user-basic, .user-education, .user-family, .user-mailing-address, .user-work{
+        margin-left: 1.1%;
+    }
+}
+
+/* ==========================================================================
+   Fixed menu scroller
+   ========================================================================== */
+
+
+
+ .f-nav{ 
+    height: 53px;
+    opacity: 1;
+    position: fixed;
+    top: -262px;
+    width: 100%;
+    z-index: 9999;
+ }
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:*/
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
